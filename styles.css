@@ -1,0 +1,93 @@
+body{
+    background: #F3F5FC;
+    display:flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    height: 500px;
+}
+
+aside{
+    width: 10%;
+}
+
+main{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.caja-input, .caja-output{
+    height: 95%;
+}
+
+.caja-input{
+    width: 70%;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2.5%;
+    align-content: space-around;
+}
+
+.caja-output{
+    background-color: white;
+    width: 30%;
+    margin: 0 2.5%;
+    border-radius: 25px;
+    padding: 15px;
+}
+/* INPUT */
+
+.caja-texto{
+    height: 90%;
+    padding: 35px 0 10px 0;
+    
+}
+
+.caja-texto textarea{
+    resize: none;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+.recordatorio{
+    display: flex;
+}
+
+.recordatorio p{
+    margin-left: 5px;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{
+    width: 45%;
+    height: 35px;
+    border-radius: 12px;
+    margin: 0 0px 35px 0;
+    
+}
+
+/* OUTPUT */
+
+.caja-output svg{
+    width: 100%;
+}
+
+/* BOTONES */
+
+.oscuro{
+    background: #0A3871;
+}
+
+.transparante{
+    background: none;
+}
