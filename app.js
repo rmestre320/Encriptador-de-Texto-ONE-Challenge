@@ -23,9 +23,16 @@ function copia(){
     navigator.clipboard.writeText(texto);
 }
 
-
+function validacion(texto){
+    if (!/^[a-z]+$/.test(texto)) {
+        alert("Ingresa el texto en minuscula y sin caracteres especiales");
+        return false;
+    }
+    return true;
+}
 function encripta(){
     const texto = getText();
+    if(!validacion(texto)){return ;}
     if(texto === ""){
         console.log("Ningun texto fue escrito");
         return;
@@ -60,6 +67,7 @@ function encripta(){
 
 function desencripta(){
     let texto = getText();
+    if(!validacion(texto)){return ;}
     if(texto === ""){
         console.log("Ningun texto fue escrito");
         return;
