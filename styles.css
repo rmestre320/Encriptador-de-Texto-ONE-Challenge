@@ -151,3 +151,56 @@ textarea, textarea::placeholder{
 .claro:hover{
     background: #D8DFE8;
 }
+
+@media screen and (max-width:768px){
+
+    body{
+        flex-direction: column;
+        margin: 0;
+        padding: 40px 5px;
+    }
+    main{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .caja-input, .caja-output{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .caja-output{
+        margin: 30px 0;
+        padding: 20px 0;
+    }
+    .caja-output svg{
+        display: none;
+    }
+
+    .caja-output h2, .resultado-output h3{
+        margin:0 0 15px 0;
+    }
+
+    .caja-output h3{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .caja-output button{
+        margin: 0 15px;
+    }
+    
+}
+
+@media screen and (max-width:480px){
+
+    .caja-input .botones{
+        flex-direction: column;
+    }
+    
+    .caja-input .boton{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
